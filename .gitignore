@@ -1,0 +1,15 @@
+autom4te.cache
+.deps
+aclocal.m4
+AUTHORS
+ChangeLog
+compile
+*.log
+config.status
+COPYING
+depcomp
+missing
+FizzBuzzApp
+*.trs
+*.o
+NEWS
