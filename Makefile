@@ -69,10 +69,10 @@ am__make_running_with_option = \
   test $$has_opt = yes
 am__make_dryrun = (target_option=n; $(am__make_running_with_option))
 am__make_keepgoing = (target_option=k; $(am__make_running_with_option))
-pkgdatadir = $(datadir)/money
-pkgincludedir = $(includedir)/money
-pkglibdir = $(libdir)/money
-pkglibexecdir = $(libexecdir)/money
+pkgdatadir = $(datadir)/fizzbuzz
+pkgincludedir = $(includedir)/fizzbuzz
+pkglibdir = $(libdir)/fizzbuzz
+pkglibexecdir = $(libexecdir)/fizzbuzz
 am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd
 install_sh_DATA = $(install_sh) -c -m 644
 install_sh_PROGRAM = $(install_sh) -c
@@ -85,7 +85,7 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
-TESTS = MoneyApp$(EXEEXT)
+TESTS = FizzBuzzApp$(EXEEXT)
 check_PROGRAMS = $(am__EXEEXT_1)
 subdir = .
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
@@ -99,13 +99,13 @@ am__CONFIG_DISTCLEAN_FILES = config.status config.cache config.log \
 mkinstalldirs = $(install_sh) -d
 CONFIG_CLEAN_FILES =
 CONFIG_CLEAN_VPATH_FILES =
-am__EXEEXT_1 = MoneyApp$(EXEEXT)
-am_MoneyApp_OBJECTS = MoneyApp-MoneyTest.$(OBJEXT) \
-	MoneyApp-MoneyApp.$(OBJEXT)
-MoneyApp_OBJECTS = $(am_MoneyApp_OBJECTS)
+am__EXEEXT_1 = FizzBuzzApp$(EXEEXT)
+am_FizzBuzzApp_OBJECTS = FizzBuzzApp-FizzBuzzTest.$(OBJEXT) \
+	FizzBuzzApp-FizzBuzzApp.$(OBJEXT)
+FizzBuzzApp_OBJECTS = $(am_FizzBuzzApp_OBJECTS)
 am__DEPENDENCIES_1 =
-MoneyApp_DEPENDENCIES = $(am__DEPENDENCIES_1)
-MoneyApp_LINK = $(CXXLD) $(MoneyApp_CXXFLAGS) $(CXXFLAGS) \
+FizzBuzzApp_DEPENDENCIES = $(am__DEPENDENCIES_1)
+FizzBuzzApp_LINK = $(CXXLD) $(FizzBuzzApp_CXXFLAGS) $(CXXFLAGS) \
 	$(AM_LDFLAGS) $(LDFLAGS) -o $@
 AM_V_P = $(am__v_P_$(V))
 am__v_P_ = $(am__v_P_$(AM_DEFAULT_VERBOSITY))
@@ -152,8 +152,8 @@ AM_V_CCLD = $(am__v_CCLD_$(V))
 am__v_CCLD_ = $(am__v_CCLD_$(AM_DEFAULT_VERBOSITY))
 am__v_CCLD_0 = @echo "  CCLD    " $@;
 am__v_CCLD_1 = 
-SOURCES = $(MoneyApp_SOURCES)
-DIST_SOURCES = $(MoneyApp_SOURCES)
+SOURCES = $(FizzBuzzApp_SOURCES)
+DIST_SOURCES = $(FizzBuzzApp_SOURCES)
 am__can_run_installinfo = \
   case $$AM_UPDATE_INFO_DIR in \
     n|no|NO) false;; \
@@ -403,12 +403,12 @@ distuninstallcheck_listfiles = find . -type f -print
 am__distuninstallcheck_listfiles = $(distuninstallcheck_listfiles) \
   | sed 's|^\./|$(prefix)/|' | grep -v '$(infodir)/dir$$'
 distcleancheck_listfiles = find . -type f -print
-ACLOCAL = ${SHELL} /home/dave/projects/cppunit_sample/missing aclocal-1.15
+ACLOCAL = ${SHELL} /home/dave/projects/cpp-fizzbuzz/missing aclocal-1.15
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 1
-AUTOCONF = ${SHELL} /home/dave/projects/cppunit_sample/missing autoconf
-AUTOHEADER = ${SHELL} /home/dave/projects/cppunit_sample/missing autoheader
-AUTOMAKE = ${SHELL} /home/dave/projects/cppunit_sample/missing automake-1.15
+AUTOCONF = ${SHELL} /home/dave/projects/cpp-fizzbuzz/missing autoconf
+AUTOHEADER = ${SHELL} /home/dave/projects/cpp-fizzbuzz/missing autoheader
+AUTOMAKE = ${SHELL} /home/dave/projects/cpp-fizzbuzz/missing automake-1.15
 AWK = gawk
 CC = gcc
 CCDEPMODE = depmode=gcc3
@@ -421,7 +421,7 @@ CXX = g++
 CXXDEPMODE = depmode=gcc3
 CXXFLAGS = -g -O2
 CYGPATH_W = echo
-DEFS = -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"money\" -DVERSION=\"0.1\"
+DEFS = -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"fizzbuzz\" -DVERSION=\"0.1\"
 DEPDIR = .deps
 ECHO_C = 
 ECHO_N = -n
@@ -436,10 +436,10 @@ LDFLAGS =
 LIBOBJS = 
 LIBS = 
 LTLIBOBJS = 
-MAKEINFO = ${SHELL} /home/dave/projects/cppunit_sample/missing makeinfo
+MAKEINFO = ${SHELL} /home/dave/projects/cpp-fizzbuzz/missing makeinfo
 MKDIR_P = /bin/mkdir -p
 OBJEXT = o
-PACKAGE = money
+PACKAGE = fizzbuzz
 PACKAGE_BUGREPORT = 
 PACKAGE_NAME = 
 PACKAGE_STRING = 
@@ -451,10 +451,10 @@ SET_MAKE =
 SHELL = /bin/bash
 STRIP = 
 VERSION = 0.1
-abs_builddir = /home/dave/projects/cppunit_sample
-abs_srcdir = /home/dave/projects/cppunit_sample
-abs_top_builddir = /home/dave/projects/cppunit_sample
-abs_top_srcdir = /home/dave/projects/cppunit_sample
+abs_builddir = /home/dave/projects/cpp-fizzbuzz
+abs_srcdir = /home/dave/projects/cpp-fizzbuzz
+abs_top_builddir = /home/dave/projects/cpp-fizzbuzz
+abs_top_srcdir = /home/dave/projects/cpp-fizzbuzz
 ac_ct_CC = gcc
 ac_ct_CXX = g++
 am__include = include
@@ -474,7 +474,7 @@ host_alias =
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/dave/projects/cppunit_sample/install-sh
+install_sh = ${SHELL} /home/dave/projects/cpp-fizzbuzz/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -495,9 +495,9 @@ target_alias =
 top_build_prefix = 
 top_builddir = .
 top_srcdir = .
-MoneyApp_SOURCES = Money.h MoneyTest.h MoneyTest.cpp MoneyApp.cpp
-MoneyApp_CXXFLAGS = $(CPPUNIT_CFLAGS)
-MoneyApp_LDADD = $(CPPUNIT_LIBS) -ldl
+FizzBuzzApp_SOURCES = FizzBuzz.h FizzBuzzTest.h FizzBuzzTest.cpp FizzBuzzApp.cpp
+FizzBuzzApp_CXXFLAGS = $(CPPUNIT_CFLAGS)
+FizzBuzzApp_LDADD = $(CPPUNIT_LIBS) -ldl
 all: all-am
 
 .SUFFIXES:
@@ -539,9 +539,9 @@ $(am__aclocal_m4_deps):
 clean-checkPROGRAMS:
 	-test -z "$(check_PROGRAMS)" || rm -f $(check_PROGRAMS)
 
-MoneyApp$(EXEEXT): $(MoneyApp_OBJECTS) $(MoneyApp_DEPENDENCIES) $(EXTRA_MoneyApp_DEPENDENCIES) 
-	@rm -f MoneyApp$(EXEEXT)
-	$(AM_V_CXXLD)$(MoneyApp_LINK) $(MoneyApp_OBJECTS) $(MoneyApp_LDADD) $(LIBS)
+FizzBuzzApp$(EXEEXT): $(FizzBuzzApp_OBJECTS) $(FizzBuzzApp_DEPENDENCIES) $(EXTRA_FizzBuzzApp_DEPENDENCIES) 
+	@rm -f FizzBuzzApp$(EXEEXT)
+	$(AM_V_CXXLD)$(FizzBuzzApp_LINK) $(FizzBuzzApp_OBJECTS) $(FizzBuzzApp_LDADD) $(LIBS)
 
 mostlyclean-compile:
 	-rm -f *.$(OBJEXT)
@@ -549,8 +549,8 @@ mostlyclean-compile:
 distclean-compile:
 	-rm -f *.tab.c
 
-include ./$(DEPDIR)/MoneyApp-MoneyApp.Po
-include ./$(DEPDIR)/MoneyApp-MoneyTest.Po
+include ./$(DEPDIR)/FizzBuzzApp-FizzBuzzApp.Po
+include ./$(DEPDIR)/FizzBuzzApp-FizzBuzzTest.Po
 
 .cpp.o:
 	$(AM_V_CXX)$(CXXCOMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ $<
@@ -566,33 +566,33 @@ include ./$(DEPDIR)/MoneyApp-MoneyTest.Po
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXXCOMPILE) -c -o $@ `$(CYGPATH_W) '$<'`
 
-MoneyApp-MoneyTest.o: MoneyTest.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(MoneyApp_CXXFLAGS) $(CXXFLAGS) -MT MoneyApp-MoneyTest.o -MD -MP -MF $(DEPDIR)/MoneyApp-MoneyTest.Tpo -c -o MoneyApp-MoneyTest.o `test -f 'MoneyTest.cpp' || echo '$(srcdir)/'`MoneyTest.cpp
-	$(AM_V_at)$(am__mv) $(DEPDIR)/MoneyApp-MoneyTest.Tpo $(DEPDIR)/MoneyApp-MoneyTest.Po
-#	$(AM_V_CXX)source='MoneyTest.cpp' object='MoneyApp-MoneyTest.o' libtool=no \
+FizzBuzzApp-FizzBuzzTest.o: FizzBuzzTest.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(FizzBuzzApp_CXXFLAGS) $(CXXFLAGS) -MT FizzBuzzApp-FizzBuzzTest.o -MD -MP -MF $(DEPDIR)/FizzBuzzApp-FizzBuzzTest.Tpo -c -o FizzBuzzApp-FizzBuzzTest.o `test -f 'FizzBuzzTest.cpp' || echo '$(srcdir)/'`FizzBuzzTest.cpp
+	$(AM_V_at)$(am__mv) $(DEPDIR)/FizzBuzzApp-FizzBuzzTest.Tpo $(DEPDIR)/FizzBuzzApp-FizzBuzzTest.Po
+#	$(AM_V_CXX)source='FizzBuzzTest.cpp' object='FizzBuzzApp-FizzBuzzTest.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(MoneyApp_CXXFLAGS) $(CXXFLAGS) -c -o MoneyApp-MoneyTest.o `test -f 'MoneyTest.cpp' || echo '$(srcdir)/'`MoneyTest.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(FizzBuzzApp_CXXFLAGS) $(CXXFLAGS) -c -o FizzBuzzApp-FizzBuzzTest.o `test -f 'FizzBuzzTest.cpp' || echo '$(srcdir)/'`FizzBuzzTest.cpp
 
-MoneyApp-MoneyTest.obj: MoneyTest.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(MoneyApp_CXXFLAGS) $(CXXFLAGS) -MT MoneyApp-MoneyTest.obj -MD -MP -MF $(DEPDIR)/MoneyApp-MoneyTest.Tpo -c -o MoneyApp-MoneyTest.obj `if test -f 'MoneyTest.cpp'; then $(CYGPATH_W) 'MoneyTest.cpp'; else $(CYGPATH_W) '$(srcdir)/MoneyTest.cpp'; fi`
-	$(AM_V_at)$(am__mv) $(DEPDIR)/MoneyApp-MoneyTest.Tpo $(DEPDIR)/MoneyApp-MoneyTest.Po
-#	$(AM_V_CXX)source='MoneyTest.cpp' object='MoneyApp-MoneyTest.obj' libtool=no \
+FizzBuzzApp-FizzBuzzTest.obj: FizzBuzzTest.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(FizzBuzzApp_CXXFLAGS) $(CXXFLAGS) -MT FizzBuzzApp-FizzBuzzTest.obj -MD -MP -MF $(DEPDIR)/FizzBuzzApp-FizzBuzzTest.Tpo -c -o FizzBuzzApp-FizzBuzzTest.obj `if test -f 'FizzBuzzTest.cpp'; then $(CYGPATH_W) 'FizzBuzzTest.cpp'; else $(CYGPATH_W) '$(srcdir)/FizzBuzzTest.cpp'; fi`
+	$(AM_V_at)$(am__mv) $(DEPDIR)/FizzBuzzApp-FizzBuzzTest.Tpo $(DEPDIR)/FizzBuzzApp-FizzBuzzTest.Po
+#	$(AM_V_CXX)source='FizzBuzzTest.cpp' object='FizzBuzzApp-FizzBuzzTest.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(MoneyApp_CXXFLAGS) $(CXXFLAGS) -c -o MoneyApp-MoneyTest.obj `if test -f 'MoneyTest.cpp'; then $(CYGPATH_W) 'MoneyTest.cpp'; else $(CYGPATH_W) '$(srcdir)/MoneyTest.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(FizzBuzzApp_CXXFLAGS) $(CXXFLAGS) -c -o FizzBuzzApp-FizzBuzzTest.obj `if test -f 'FizzBuzzTest.cpp'; then $(CYGPATH_W) 'FizzBuzzTest.cpp'; else $(CYGPATH_W) '$(srcdir)/FizzBuzzTest.cpp'; fi`
 
-MoneyApp-MoneyApp.o: MoneyApp.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(MoneyApp_CXXFLAGS) $(CXXFLAGS) -MT MoneyApp-MoneyApp.o -MD -MP -MF $(DEPDIR)/MoneyApp-MoneyApp.Tpo -c -o MoneyApp-MoneyApp.o `test -f 'MoneyApp.cpp' || echo '$(srcdir)/'`MoneyApp.cpp
-	$(AM_V_at)$(am__mv) $(DEPDIR)/MoneyApp-MoneyApp.Tpo $(DEPDIR)/MoneyApp-MoneyApp.Po
-#	$(AM_V_CXX)source='MoneyApp.cpp' object='MoneyApp-MoneyApp.o' libtool=no \
+FizzBuzzApp-FizzBuzzApp.o: FizzBuzzApp.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(FizzBuzzApp_CXXFLAGS) $(CXXFLAGS) -MT FizzBuzzApp-FizzBuzzApp.o -MD -MP -MF $(DEPDIR)/FizzBuzzApp-FizzBuzzApp.Tpo -c -o FizzBuzzApp-FizzBuzzApp.o `test -f 'FizzBuzzApp.cpp' || echo '$(srcdir)/'`FizzBuzzApp.cpp
+	$(AM_V_at)$(am__mv) $(DEPDIR)/FizzBuzzApp-FizzBuzzApp.Tpo $(DEPDIR)/FizzBuzzApp-FizzBuzzApp.Po
+#	$(AM_V_CXX)source='FizzBuzzApp.cpp' object='FizzBuzzApp-FizzBuzzApp.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(MoneyApp_CXXFLAGS) $(CXXFLAGS) -c -o MoneyApp-MoneyApp.o `test -f 'MoneyApp.cpp' || echo '$(srcdir)/'`MoneyApp.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(FizzBuzzApp_CXXFLAGS) $(CXXFLAGS) -c -o FizzBuzzApp-FizzBuzzApp.o `test -f 'FizzBuzzApp.cpp' || echo '$(srcdir)/'`FizzBuzzApp.cpp
 
-MoneyApp-MoneyApp.obj: MoneyApp.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(MoneyApp_CXXFLAGS) $(CXXFLAGS) -MT MoneyApp-MoneyApp.obj -MD -MP -MF $(DEPDIR)/MoneyApp-MoneyApp.Tpo -c -o MoneyApp-MoneyApp.obj `if test -f 'MoneyApp.cpp'; then $(CYGPATH_W) 'MoneyApp.cpp'; else $(CYGPATH_W) '$(srcdir)/MoneyApp.cpp'; fi`
-	$(AM_V_at)$(am__mv) $(DEPDIR)/MoneyApp-MoneyApp.Tpo $(DEPDIR)/MoneyApp-MoneyApp.Po
-#	$(AM_V_CXX)source='MoneyApp.cpp' object='MoneyApp-MoneyApp.obj' libtool=no \
+FizzBuzzApp-FizzBuzzApp.obj: FizzBuzzApp.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(FizzBuzzApp_CXXFLAGS) $(CXXFLAGS) -MT FizzBuzzApp-FizzBuzzApp.obj -MD -MP -MF $(DEPDIR)/FizzBuzzApp-FizzBuzzApp.Tpo -c -o FizzBuzzApp-FizzBuzzApp.obj `if test -f 'FizzBuzzApp.cpp'; then $(CYGPATH_W) 'FizzBuzzApp.cpp'; else $(CYGPATH_W) '$(srcdir)/FizzBuzzApp.cpp'; fi`
+	$(AM_V_at)$(am__mv) $(DEPDIR)/FizzBuzzApp-FizzBuzzApp.Tpo $(DEPDIR)/FizzBuzzApp-FizzBuzzApp.Po
+#	$(AM_V_CXX)source='FizzBuzzApp.cpp' object='FizzBuzzApp-FizzBuzzApp.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(MoneyApp_CXXFLAGS) $(CXXFLAGS) -c -o MoneyApp-MoneyApp.obj `if test -f 'MoneyApp.cpp'; then $(CYGPATH_W) 'MoneyApp.cpp'; else $(CYGPATH_W) '$(srcdir)/MoneyApp.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(FizzBuzzApp_CXXFLAGS) $(CXXFLAGS) -c -o FizzBuzzApp-FizzBuzzApp.obj `if test -f 'FizzBuzzApp.cpp'; then $(CYGPATH_W) 'FizzBuzzApp.cpp'; else $(CYGPATH_W) '$(srcdir)/FizzBuzzApp.cpp'; fi`
 
 ID: $(am__tagged_files)
 	$(am__define_uniq_tagged_files); mkid -fID $$unique
@@ -794,9 +794,9 @@ recheck: all $(check_PROGRAMS)
 	        am__force_recheck=am--force-recheck \
 	        TEST_LOGS="$$log_list"; \
 	exit $$?
-MoneyApp.log: MoneyApp$(EXEEXT)
-	@p='MoneyApp$(EXEEXT)'; \
-	b='MoneyApp'; \
+FizzBuzzApp.log: FizzBuzzApp$(EXEEXT)
+	@p='FizzBuzzApp$(EXEEXT)'; \
+	b='FizzBuzzApp'; \
 	$(am__check_pre) $(LOG_DRIVER) --test-name "$$f" \
 	--log-file $$b.log --trs-file $$b.trs \
 	$(am__common_driver_flags) $(AM_LOG_DRIVER_FLAGS) $(LOG_DRIVER_FLAGS) -- $(LOG_COMPILE) \

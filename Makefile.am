@@ -1,6 +1,6 @@
 # Rules for the test code (use `make check` to execute)
-TESTS = MoneyApp
+TESTS = FizzBuzzApp
 check_PROGRAMS = $(TESTS)
-MoneyApp_SOURCES = Money.h MoneyTest.h MoneyTest.cpp MoneyApp.cpp
-MoneyApp_CXXFLAGS = $(CPPUNIT_CFLAGS)
-MoneyApp_LDADD = $(CPPUNIT_LIBS) -ldl
+FizzBuzzApp_SOURCES = FizzBuzz.h FizzBuzzTest.h FizzBuzzTest.cpp FizzBuzzApp.cpp
+FizzBuzzApp_CXXFLAGS = $(CPPUNIT_CFLAGS)
+FizzBuzzApp_LDADD = $(CPPUNIT_LIBS) -ldl

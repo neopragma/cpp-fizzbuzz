@@ -17,6 +17,7 @@ FizzBuzzTest::tearDown()
 void
 FizzBuzzTest::itReturnsFizzFor_3()
 {
-  CPPUNIT_ASSERT( true == false );
+  FizzBuzz fb = FizzBuzz();
+  CPPUNIT_ASSERT( "Fizz" == fb.processNumber(3) );
 }
 

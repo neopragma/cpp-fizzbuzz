@@ -2366,7 +2366,7 @@ fi
 
 # Define the identity of the package.
 
- PACKAGE=money
+ PACKAGE=fizzbuzz
  VERSION=0.1
 
 

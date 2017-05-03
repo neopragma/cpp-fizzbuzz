@@ -10,9 +10,10 @@ public:
   {
   }
 
-  string processNumber()
+  std::string processNumber(int number) const
   {
     return "0";
   }
+};
 
 #endif

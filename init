@@ -1,4 +1,4 @@
-touch Money.h MoneyTest.h MoneyTest.cpp
+touch FizzBuzz.h FizzBuzzTest.h FizzBuzzTest.cpp
 aclocal -I /usr/share/aclocal
 autoconf
 automake -a
